@@ -14,7 +14,7 @@ $ids = $dd['refs'];
 if (!empty($ids)) {
 
     $xml = new SimpleXMLElement('<?xml version="1.0" encoding="UTF-8"?><root />');
-    $csv = array_map('str_getcsv', file('../csv/data-multi.csv')); // Directory contains CSV-files
+    $csv = array_map('str_getcsv', file('data-multi.csv')); // Directory contains CSV-files
 
     $resultFields    = [];
     $joins           = [];
